@@ -1,1 +1,33 @@
 @import '../variables';
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.topbar {
+  background-color: $leftBackground;
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: -7px;
+  }
+
+  &__info-container {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    .border {
+      color: #525151;
+    }
+  }
+}

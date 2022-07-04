@@ -5,7 +5,6 @@
   outline: none;
   font-family: 'Jost', 'Arial', sans-serif;
   box-sizing: border-box;
-  background-color: $mainBackground;
 }
 
 html {
@@ -17,6 +16,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $white;
+  background-color: $mainBackground;
+  width: 100vw;
+  height: 100vh;
 }
 
 a,
