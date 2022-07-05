@@ -82,18 +82,49 @@ export const Topbar = () => {
       </div>
       <div className="topbar__info-container">
         <ul>
-          <li>t</li>
-          <li>t</li>
-          <li>t</li>
+          <li>FAQ</li>
+          <li>Поддержка</li>
+          <li>Настройки</li>
           <li className="border">|</li>
         </ul>
         <ul>
-          <li>t</li>
-          <li>t</li>
-          <li>t</li>
+          <li className="topbar__sec-ul">15 готовых дз</li>
+          <li className="topbar__sec-ul">18 лекций</li>
+          <li className="topbar__sec-ul red-box-container">
+            <div>
+              <svg
+                width="7"
+                height="12"
+                viewBox="0 0 7 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  id="icon-1"
+                  d="M6.98072 4.11561C6.94697 4.0452 6.87427 4.00002 6.7942 4.00002H4.3545L6.76228 0.307008C6.80242 0.245415 6.80489 0.167414 6.76867 0.103617C6.73243 0.0396095 6.66324 0 6.5883 0H3.2942C3.21617 0 3.14492 0.042797 3.10994 0.110602L0.0217095 6.11061C-0.0102102 6.17242 -0.00671186 6.24601 0.0307571 6.305C0.0684431 6.364 0.134526 6.4 0.205966 6.4H2.32304L0.0161362 11.7224C-0.0231905 11.8134 0.0118175 11.919 0.098481 11.9706C0.131824 11.9904 0.168883 12 0.205749 12C0.264835 12 0.323101 11.9754 0.363466 11.929L6.9517 4.32899C7.00335 4.26941 7.01448 4.1862 6.98072 4.11561Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <span>1200</span>часов
+          </li>
         </ul>
       </div>
-      <img className="topbar__avatar" src="./pictures/topbar/avatar.png" alt="user avatar" />
+      <div className="topbar__rightside">
+        <img
+          className="topbar__rightside__avatar"
+          src="./pictures/topbar/avatar.png"
+          alt="user avatar"
+        />
+        <div className="topbar__rightside__user-description">
+          <p>Илья Зухбая</p>
+          <p>
+            <span></span>Online
+          </p>
+        </div>
+        <div className="PRO">
+          <p>PRO</p>
+        </div>
+      </div>
     </div>
   );
 };

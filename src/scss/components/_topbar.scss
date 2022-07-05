@@ -3,7 +3,11 @@
 .topbar-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #707070;
+  background-color: $mainBackground;
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
 }
 
 .topbar {
@@ -26,8 +30,84 @@
       display: flex;
       align-items: center;
     }
+    ul:first-child {
+      font-size: 14px;
+      color: #adadad;
+      line-height: 10px;
+    }
+    ul:last-child {
+      li:last-child {
+        display: flex;
+        align-items: center;
+        color: #adadad;
+        span {
+          font-size: 13px;
+        }
+        div {
+          width: 16px;
+          height: 16px;
+          background-color: $red;
+          box-shadow: 0px 0px 12px rgba(255, 71, 56, 0.5);
+          border-radius: 4px;
+          svg {
+            position: relative;
+            top: 2px;
+            left: 4px;
+          }
+        }
+      }
+      font-size: 13px;
+      line-height: 10px;
+      color: #ffff;
+    }
     .border {
       color: #525151;
     }
   }
+  &__rightside {
+    display: flex;
+    &__avatar {
+      height: 44px;
+    }
+    &__user-description {
+      p:first-child {
+        font-size: 14px;
+      }
+      p:last-child {
+        display: flex;
+        span {
+          position: relative;
+          top: 6px;
+          width: 6px;
+          height: 6px;
+          background-color: $green;
+          display: block;
+          border-radius: 5px;
+        }
+        font-size: 13px;
+        color: $green;
+        font-weight: 600;
+      }
+    }
+  }
+  &__sec-ul {
+    display: flex;
+    align-items: center;
+    background-color: #404040;
+    border-radius: 5px;
+    height: 24px;
+  }
+}
+.PRO {
+  p {
+    position: relative;
+    left: 10px;
+    bottom: 1px;
+    font-size: 11px;
+  }
+  width: 40px;
+  height: 14px;
+  background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
+  box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+  border-radius: 4px;
 }
