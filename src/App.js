@@ -2,12 +2,12 @@ import React from 'react';
 import './scss/app.scss';
 
 import { Topbar } from './components/Topbar';
-
+import { Leftbar } from './components/Leftbar';
 function App() {
   return (
     <div className="wrapper">
       <Topbar />
-      <div>TETETTETETETETETTET</div>
+      <Leftbar />
     </div>
   );
 }
