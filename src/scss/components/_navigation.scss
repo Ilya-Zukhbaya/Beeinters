@@ -2,7 +2,45 @@
 
 .leftbar__container {
   padding-top: 60px;
+  width: 280px;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: $leftBackground;
 }
 .leftbar {
   border-bottom: 1px solid #707070;
+
+  ul {
+    padding-left: 20px;
+  }
+
+  &__sec-li {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      width: 75px;
+    }
+  }
+
+  &__first-line {
+    padding-left: 20px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__arrowUP {
+    width: 10px;
+    height: 6px;
+  }
+}
+.popup {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

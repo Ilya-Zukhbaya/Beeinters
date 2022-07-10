@@ -12,10 +12,13 @@
 
 .topbar {
   background-color: $leftBackground;
+  width: 280px;
+  padding-left: 20px;
   &__logo-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 120px;
   }
   &__logo {
     font-weight: 700;

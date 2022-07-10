@@ -1,1 +1,45 @@
 @import '../variables';
+
+.leftbar__container-switcher {
+  display: flex;
+  width: 260px;
+  padding-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  label {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    position: relative;
+
+    input {
+      display: none;
+    }
+    span {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 0.4s;
+      border-radius: 34px;
+      border: 1px solid #ffffff;
+    }
+    span:before {
+      position: absolute;
+      content: '';
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 3.5px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 34px;
+    }
+    input:checked + span:before {
+      transform: translateX(14px);
+      background-color: $switcher;
+    }
+  }
+}
