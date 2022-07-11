@@ -6,6 +6,7 @@
   border-bottom: 1px solid #707070;
   background-color: $mainBackground;
   width: 100vw;
+  height: 58px;
   position: fixed;
   overflow: hidden;
 }
@@ -13,7 +14,7 @@
 .topbar {
   background-color: $leftBackground;
   width: 280px;
-  padding-left: 20px;
+  padding: 5px 0 0 20px;
   &__logo-container {
     display: flex;
     align-items: center;
@@ -27,11 +28,14 @@
   }
 
   &__info-container {
+    width: 1030px;
     display: flex;
     justify-content: space-between;
     ul {
       display: flex;
       align-items: center;
+      width: 250px;
+      justify-content: space-between;
     }
     ul:first-child {
       font-size: 14px;
@@ -39,6 +43,7 @@
       line-height: 10px;
     }
     ul:last-child {
+      width: 300px;
       li:last-child {
         display: flex;
         align-items: center;
@@ -69,6 +74,11 @@
   }
   &__rightside {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 20px;
+    margin-left: -50px;
     &__avatar {
       height: 44px;
     }
@@ -78,6 +88,8 @@
       }
       p:last-child {
         display: flex;
+        justify-content: space-between;
+        width: 50px;
         span {
           position: relative;
           top: 6px;
@@ -98,6 +110,7 @@
     align-items: center;
     background-color: #404040;
     border-radius: 5px;
+    padding: 10px;
     height: 24px;
   }
 }
@@ -113,4 +126,10 @@
   background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
   box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
   border-radius: 4px;
+  position: relative;
+  top: -10px;
+}
+.red-box-container {
+  width: 105px;
+  justify-content: space-between;
 }
