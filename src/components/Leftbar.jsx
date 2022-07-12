@@ -5,14 +5,14 @@ export const Leftbar = () => {
     <article className="leftbar__container">
       <div className="leftbar">
         <div className="leftbar__first-line">
-          <p>Программа</p>
+          <p>ПРОГРАММА</p>
           <img src="./pictures/leftbar/arrowUp.png" alt="arrow up" className="leftbar__arrowUP" />
         </div>
         <ul>
-          <li>Менторы</li>
+          <li>МЕНТОРЫ</li>
           <li>
             <div className="popup">
-              <p>Лекции</p>
+              <p>ЛЕКЦИИ</p>
               <img
                 src="./pictures/leftbar/arrowUp.png"
                 alt="arrow up"
@@ -46,9 +46,9 @@ export const Leftbar = () => {
               </li>
             </ul>
           </li>
-          <li>Правила поступления</li>
-          <li>Новости</li>
-          <li>Обратная связь</li>
+          <li>ПРАВИЛА ПОСТУПЛЕНИЯ</li>
+          <li>НОВОСТИ</li>
+          <li>ОБРАТНАЯ СВЯЗЬ</li>
         </ul>
       </div>
       <div className="leftbar__container-switcher">

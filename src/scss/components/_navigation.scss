@@ -1,6 +1,9 @@
 @import '../variables';
 
 .leftbar__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding-top: 60px;
   width: 280px;
   height: 100vh;
@@ -10,9 +13,16 @@
 }
 .leftbar {
   border-bottom: 1px solid #707070;
-
+  height: calc(100vh - 47vh);
+  padding-top: 25px;
   ul {
     padding-left: 20px;
+    li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 1px;
+    }
   }
 
   &__sec-li {
@@ -20,18 +30,33 @@
     width: 120px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px !important;
 
     p {
       width: 75px;
+      line-height: 10px;
+      letter-spacing: normal;
+      color: $grey;
     }
+  }
+
+  &__sec-li:first-child {
+    margin-top: 15px;
   }
 
   &__first-line {
     padding-left: 20px;
+    margin-bottom: 10px;
     width: 260px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 1px;
+    }
   }
   &__arrowUP {
     width: 10px;
