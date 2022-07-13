@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 1,
+    "title": "HTML",
+    "description": "HTML-формы",
+    "lectionDate": "01.02.2022"
+  },
+  {
+    "id": 1,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 1,
+    "title": "HTML",
+    "description": "Принципы современной верстки сайта на flex",
+    "lectionDate": "08.02.2022"
+  },
+  {
+    "id": 2,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Адаптивная верстка. Использование media и viewport",
+    "lectionDate": "16.02.2022"
+  },
+  {
+    "id": 3,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "CSS Grid",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 4,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Переменные в JavaScript",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 5,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Объекты и массивы",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 6,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "ReactDOM",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 7,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Props, props-drilling",
+    "lectionDate": "23.03.2022"
+  }
+]

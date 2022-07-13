@@ -14,7 +14,7 @@ export const LecturesHeader = () => {
             CSS
           </button>
           <button type="button" className="lection-button lecturesHeader__container-lectButton">
-            javascrict
+            Javascrict
           </button>
           <button type="button" className="lection-button lecturesHeader__container-lectButton">
             8 лекций
