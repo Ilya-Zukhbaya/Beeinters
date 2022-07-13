@@ -1,1 +1,25 @@
 @import '../variables';
+
+.lection-button {
+  background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
+  border-radius: 4px;
+  width: 86px;
+  height: 30px;
+  border: none;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.navigation-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey;
+  border-radius: 4px;
+  background-color: $mainBackground;
+}
+
+.lastButton {
+  margin-right: 20px !important;
+}

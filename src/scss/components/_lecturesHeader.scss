@@ -1,1 +1,35 @@
 @import '../variables';
+
+.lecturesHeader {
+  padding: 100px 0 0 350px;
+  p {
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: $grey;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 18px;
+    }
+
+    div:last-child {
+      display: flex;
+      align-items: center;
+    }
+
+    &-lectButton {
+      margin-right: 10px;
+    }
+
+    &-navButton {
+      margin-right: 5px;
+    }
+  }
+}
