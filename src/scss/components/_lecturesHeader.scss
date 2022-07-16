@@ -1,7 +1,6 @@
 @import '../variables';
 
 .lecturesHeader {
-  padding: 100px 0 0 350px;
   p {
     font-size: 11px;
     text-transform: uppercase;
@@ -32,4 +31,11 @@
       margin-right: 5px;
     }
   }
+}
+
+.main-container {
+  padding: 100px 0 0 350px;
+}
+.header-container {
+  padding: 100px 0 0 350px;
 }

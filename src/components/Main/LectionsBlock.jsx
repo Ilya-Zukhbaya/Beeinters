@@ -1,9 +1,10 @@
 import React from 'react';
+import { LectureBlock } from './LectureBlock';
 
 export const LecturesBlock = () => {
   return (
     <article>
-      <div>
+      <div className="main-container">
         <div className="lecturesHeader">
           <p>Продвинутый уровень</p>
           <div className="lecturesHeader__container">
@@ -25,8 +26,9 @@ export const LecturesBlock = () => {
             </div>
           </div>
         </div>
+        <LectureBlock />
       </div>
-      <div>
+      <div className="main-container">
         <div className="lecturesHeader">
           <p>Продвинутый уровень</p>
           <div className="lecturesHeader__container">
@@ -48,6 +50,7 @@ export const LecturesBlock = () => {
             </div>
           </div>
         </div>
+        <LectureBlock />
       </div>
     </article>
   );

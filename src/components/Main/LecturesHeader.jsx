@@ -2,7 +2,7 @@ import React from 'react';
 
 export const LecturesHeader = () => {
   return (
-    <article className="lecturesHeader">
+    <article className="lecturesHeader header-container">
       <p>Все лекции на нашем сайте</p>
       <div className="lecturesHeader__container">
         <h2>ALL LECTURES</h2>
