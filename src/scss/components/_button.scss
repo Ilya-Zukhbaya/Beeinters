@@ -21,5 +21,16 @@
 }
 
 .lastButton {
-  margin-right: 20px !important;
+  margin-right: unset !important;
+}
+
+.watch-button {
+  background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
+  border-radius: 4px;
+  width: 89px;
+  border: none;
+  color: #ffff;
+  height: 30px;
+  font-size: 13px;
+  line-height: 10px;
 }

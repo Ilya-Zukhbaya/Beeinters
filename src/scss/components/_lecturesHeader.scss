@@ -1,6 +1,8 @@
 @import '../variables';
 
 .lecturesHeader {
+  box-sizing: content-box;
+  width: 1200px;
   p {
     font-size: 11px;
     text-transform: uppercase;
@@ -33,9 +35,21 @@
   }
 }
 
-.main-container {
+.root-article {
+  width: 1200px;
+  box-sizing: content-box;
   padding: 100px 0 0 350px;
 }
 .header-container {
   padding: 100px 0 0 350px;
+}
+.main-container:first-child {
+  padding-bottom: 100px;
+}
+.root-article:last-child {
+  padding-bottom: 50px;
+}
+.lecturesContainer {
+  display: flex;
+  justify-content: space-between;
 }

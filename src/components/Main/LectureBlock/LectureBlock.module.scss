@@ -3,6 +3,7 @@
   border-radius: 6px;
   height: 294px;
   width: 255px;
+  margin-top: 20px;
   &__header {
     position: relative;
     div {
@@ -22,25 +23,41 @@
       }
     }
     img {
+      border-radius: 6px 6px 0px 0px;
       z-index: 0;
     }
   }
+  &__mainContainer {
+    display: flex;
+    height: 105px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__main {
-    padding-left: 15px;
-    border-bottom: 1px solid #8b8b8b;
+    padding: 10px 0 0 15px;
     h4 {
       font-size: 16px;
       line-height: 12px;
       font-weight: 400;
+      padding-bottom: 5px;
     }
     p {
+      max-width: 205px;
       color: #8b8b8b;
       font-size: 14px;
       line-height: 18px;
     }
   }
   &__footer {
+    border-top: 1px solid #5c5c5c;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 0;
+
+    p {
+      font-size: 13px;
+      line-height: 10px;
+    }
   }
 }

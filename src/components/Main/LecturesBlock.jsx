@@ -2,8 +2,20 @@ import React from 'react';
 import { LectureBlock } from './LectureBlock';
 
 export const LecturesBlock = () => {
+  const [lections, setLections] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch('https://62ceaccd826a88972d00785b.mockapi.io/lections')
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        setLections(response);
+      });
+  }, []);
+
   return (
-    <article>
+    <article className="root-article">
       <div className="main-container">
         <div className="lecturesHeader">
           <p>Продвинутый уровень</p>
@@ -26,7 +38,11 @@ export const LecturesBlock = () => {
             </div>
           </div>
         </div>
-        <LectureBlock />
+        <div className="lecturesContainer">
+          {lections.slice(4).map((obj) => (
+            <LectureBlock {...obj} key={obj.id} />
+          ))}
+        </div>
       </div>
       <div className="main-container">
         <div className="lecturesHeader">
@@ -50,7 +66,11 @@ export const LecturesBlock = () => {
             </div>
           </div>
         </div>
-        <LectureBlock />
+        <div className="lecturesContainer">
+          {lections.slice(0, 4).map((obj) => (
+            <LectureBlock {...obj} key={obj.id} />
+          ))}
+        </div>
       </div>
     </article>
   );
