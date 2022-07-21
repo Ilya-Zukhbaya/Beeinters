@@ -58,9 +58,22 @@
       letter-spacing: 1px;
     }
   }
+  button {
+    border: none;
+    background-color: transparent;
+  }
   &__arrowUP {
     width: 10px;
     height: 6px;
+    transition: 0.5s;
+  }
+  &__rotate-first {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+  &__rotate-second {
+    transform: rotate(180deg);
+    transition: 0.5s;
   }
 }
 .popup {

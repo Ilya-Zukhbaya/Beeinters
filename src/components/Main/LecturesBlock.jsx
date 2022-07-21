@@ -1,8 +1,10 @@
 import React from 'react';
 import { LectureBlock } from './LectureBlock';
+import Skeleton from './SkeletonBlock';
 
 export const LecturesBlock = () => {
   const [lections, setLections] = React.useState([]);
+  const [loading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
     fetch('https://62ceaccd826a88972d00785b.mockapi.io/lections')
@@ -11,6 +13,7 @@ export const LecturesBlock = () => {
       })
       .then((response) => {
         setLections(response);
+        setIsLoading(false);
       });
   }, []);
 
@@ -39,9 +42,9 @@ export const LecturesBlock = () => {
           </div>
         </div>
         <div className="lecturesContainer">
-          {lections.slice(4).map((obj) => (
-            <LectureBlock {...obj} key={obj.id} />
-          ))}
+          {loading
+            ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
+            : lections.slice(4).map((obj) => <LectureBlock {...obj} key={obj.id} />)}
         </div>
       </div>
       <div className="main-container">
@@ -67,9 +70,9 @@ export const LecturesBlock = () => {
           </div>
         </div>
         <div className="lecturesContainer">
-          {lections.slice(0, 4).map((obj) => (
-            <LectureBlock {...obj} key={obj.id} />
-          ))}
+          {loading
+            ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
+            : lections.slice(0, 4).map((obj) => <LectureBlock {...obj} key={obj.id} />)}
         </div>
       </div>
     </article>
