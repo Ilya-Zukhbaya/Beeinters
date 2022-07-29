@@ -2,3 +2,22 @@
 @import './libs/normalize';
 
 @import './components/all';
+
+.root-article {
+  width: 1200px;
+  box-sizing: content-box;
+  padding: 70px 0 0 350px;
+}
+.header-container {
+  padding: 100px 0 0 350px;
+}
+.main-container:first-child {
+  padding-bottom: 70px;
+}
+.root-article:last-child {
+  padding-bottom: 50px;
+}
+.lecturesContainer {
+  display: flex;
+  justify-content: space-between;
+}

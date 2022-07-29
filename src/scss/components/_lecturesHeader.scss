@@ -9,6 +9,14 @@
     line-height: 16px;
     color: $grey;
   }
+
+  &__main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    padding-top: 30px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -35,21 +43,30 @@
   }
 }
 
-.root-article {
-  width: 1200px;
-  box-sizing: content-box;
-  padding: 100px 0 0 350px;
-}
-.header-container {
-  padding: 100px 0 0 350px;
-}
-.main-container:first-child {
-  padding-bottom: 100px;
-}
-.root-article:last-child {
-  padding-bottom: 50px;
-}
-.lecturesContainer {
-  display: flex;
-  justify-content: space-between;
+.searchContainer {
+  position: relative;
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 42px;
+    transition: all 0.15s ease-in-out;
+    background-color: $leftBackground;
+    color: $white;
+
+    &:focus {
+      border: 1px solid $leftBackground;
+      width: 330px;
+    }
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
 }
