@@ -1,16 +1,17 @@
 import React from 'react';
 import { LectureBlock } from './LectureBlock';
 
-export const LecturesHeader = ({ items, searchLections, setSearchLections }) => {
+export const LecturesHeader = ({ items, searchLectures, setSearchLectures }) => {
   const buttons = ['HTML', 'CSS', 'Javascrict', '8 лекций'];
   const [headerButton, setHeaderButton] = React.useState(0);
+  const [headerButtonClick, setHeaderButtonClick] = React.useState(false);
 
   return (
     <article className="lecturesHeader header-container">
       <p>Все лекции на нашем сайте</p>
       <div className="lecturesHeader__container">
         <h2>ALL LECTURES</h2>
-        {headerButton === 4 && (
+        {headerButtonClick && headerButton === 4 && (
           <div className="searchContainer">
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <title />
@@ -21,11 +22,11 @@ export const LecturesHeader = ({ items, searchLections, setSearchLections }) => 
               </g>
             </svg>
             <input
-              value={searchLections}
+              value={searchLectures}
               type="search"
               name="search lections"
               placeholder="Поиск лекции..."
-              onChange={(event) => setSearchLections(event.target.value)}
+              onChange={(event) => setSearchLectures(event.target.value)}
             />
           </div>
         )}
@@ -34,7 +35,10 @@ export const LecturesHeader = ({ items, searchLections, setSearchLections }) => 
             <button
               type="button"
               className="lection-button lecturesHeader__container-lectButton"
-              onClick={() => setHeaderButton(i + 1)}
+              onClick={() => {
+                setHeaderButton(i + 1);
+                setHeaderButtonClick(!headerButtonClick);
+              }}
               key={i}>
               {obj}
             </button>
@@ -50,16 +54,15 @@ export const LecturesHeader = ({ items, searchLections, setSearchLections }) => 
         </div>
       </div>
       <div className="lecturesHeader__main">
-        {headerButton === 4
+        {headerButtonClick && headerButton === 4
           ? items
-              .filter((obj) => obj.description.toLowerCase().includes(searchLections.toLowerCase()))
+              .filter((obj) => obj.description.toLowerCase().includes(searchLectures.toLowerCase()))
               .map((obj) => <LectureBlock {...obj} key={obj.id} />)
           : ''}
-        {items
-          .filter((obj) => obj.type === headerButton)
-          .map((obj) => (
-            <LectureBlock {...obj} key={obj.id} />
-          ))}
+        {headerButtonClick &&
+          items
+            .filter((obj) => obj.type === headerButton)
+            .map((obj) => <LectureBlock {...obj} key={obj.id} />)}
       </div>
     </article>
   );
