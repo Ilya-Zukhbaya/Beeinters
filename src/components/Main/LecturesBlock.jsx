@@ -6,6 +6,7 @@ import Skeleton from './SkeletonBlock';
 export const LecturesBlock = () => {
   const [lections, setLections] = React.useState([]);
   const [loading, setIsLoading] = React.useState(true);
+  const [searchLections, setSearchLections] = React.useState('');
 
   React.useEffect(() => {
     fetch('https://62ceaccd826a88972d00785b.mockapi.io/lections')
@@ -20,7 +21,11 @@ export const LecturesBlock = () => {
 
   return (
     <>
-      <LecturesHeader items={lections} />
+      <LecturesHeader
+        items={lections}
+        searchLections={searchLections}
+        setSearchLections={setSearchLections}
+      />
       <article className="root-article">
         <div className="main-container">
           <div className="lecturesHeader">
