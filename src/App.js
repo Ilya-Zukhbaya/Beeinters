@@ -1,16 +1,19 @@
 import React from 'react';
 import './scss/app.scss';
+import { Routes, Route } from 'react-router-dom';
 
-import { Topbar } from './components/Topbar';
-import { Leftbar } from './components/Leftbar';
-import { LecturesBlock } from './components/Main/LecturesBlock';
+import { Header } from './components/Header/Header';
+import { Home } from './pages/Home';
+import { NotFound } from './pages/NotFound';
 
 function App() {
   return (
     <div className="wrapper">
-      <Topbar />
-      <Leftbar />
-      <LecturesBlock />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

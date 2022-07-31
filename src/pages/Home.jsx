@@ -1,9 +1,11 @@
 import React from 'react';
-import { LectureBlock } from './LectureBlock';
-import { LecturesHeader } from './LecturesHeader';
-import Skeleton from './SkeletonBlock';
 
-export const LecturesBlock = () => {
+import Skeleton from '../components/Main/SkeletonBlock';
+import { Pagination } from '../components/Main/Pagination';
+import { LectureBlock } from '../components/Main/LectureBlock';
+import { LecturesHeader } from '../components/Main/LecturesHeader';
+
+export const Home = () => {
   const [lections, setLections] = React.useState([]);
   const [loading, setIsLoading] = React.useState(true);
   const [searchLectures, setSearchLectures] = React.useState('');
