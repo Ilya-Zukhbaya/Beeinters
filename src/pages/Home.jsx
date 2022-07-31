@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Skeleton from '../components/Main/SkeletonBlock';
-import { Pagination } from '../components/Main/Pagination';
 import { LectureBlock } from '../components/Main/LectureBlock';
 import { LecturesHeader } from '../components/Main/LecturesHeader';
 
@@ -11,7 +10,7 @@ export const Home = () => {
   const [searchLectures, setSearchLectures] = React.useState('');
 
   React.useEffect(() => {
-    fetch('https://62ceaccd826a88972d00785b.mockapi.io/lections')
+    fetch(`https://62ceaccd826a88972d00785b.mockapi.io/lections`)
       .then((response) => {
         return response.json();
       })

@@ -21,3 +21,19 @@
   display: flex;
   justify-content: space-between;
 }
+.notFound-container {
+  padding-top: 300px;
+  margin: 0 auto;
+  text-align: center;
+
+  button {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
+    border-radius: 10px;
+    border: none;
+    color: #ffff;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
