@@ -4,7 +4,7 @@
     "imageURL": "/pictures/main/lectionsBack/firstBack.png",
     "type": 1,
     "title": "HTML",
-    "description": "HTML-формы",
+    "description": "Структура HTML. Назначение блоков: <head />, <body />.",
     "lectionDate": "01.02.2022"
   },
   {
@@ -12,55 +12,367 @@
     "imageURL": "/pictures/main/lectionsBack/secondBack.png",
     "type": 1,
     "title": "HTML",
-    "description": "Принципы современной верстки сайта на flex",
+    "description": "Виды подключения стилей.",
     "lectionDate": "08.02.2022"
   },
   {
     "id": 2,
     "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
-    "type": 2,
-    "title": "CSS",
-    "description": "Адаптивная верстка. Использование media и viewport",
-    "lectionDate": "16.02.2022"
+    "type": 1,
+    "title": "HTML",
+    "description": "Блочные элементы.",
+    "lectionDate": "08.02.2022"
   },
   {
     "id": 3,
     "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
-    "type": 2,
-    "title": "CSS",
-    "description": "CSS Grid",
-    "lectionDate": "23.02.2022"
+    "type": 1,
+    "title": "HTML",
+    "description": "Строчные элементы.",
+    "lectionDate": "08.02.2022"
   },
   {
     "id": 4,
     "imageURL": "/pictures/main/lectionsBack/firstBack.png",
-    "type": 3,
-    "title": "JavaScript",
-    "description": "Переменные в JavaScript",
-    "lectionDate": "01.03.2022"
+    "type": 1,
+    "title": "HTML",
+    "description": "Работа с тегами: img, picture, a, p, H1-H6, ul/li.",
+    "lectionDate": "08.02.2022"
   },
   {
     "id": 5,
     "imageURL": "/pictures/main/lectionsBack/secondBack.png",
-    "type": 3,
-    "title": "JavaScript",
-    "description": "Объекты и массивы",
-    "lectionDate": "08.03.2022"
+    "type": 1,
+    "title": "HTML",
+    "description": "HTML-формы.",
+    "lectionDate": "08.02.2022"
   },
   {
     "id": 6,
     "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
-    "type": 3,
-    "title": "React",
-    "description": "ReactDOM",
-    "lectionDate": "16.03.2022"
+    "type": 1,
+    "title": "HTML",
+    "description": "Подключение шрифтов.",
+    "lectionDate": "08.02.2022"
   },
   {
     "id": 7,
     "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Базовый синтаксис CSS: селекторы, классы.",
+    "lectionDate": "16.02.2022"
+  },
+  {
+    "id": 8,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Наследие и каскад.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 9,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Отступы (margin, padding), схлопывание отступов.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 10,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Ширина/высота: width, height, line-height, box-sizing.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 11,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Работа с текстом.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 12,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Работа с фоном: background.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 13,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Принципы современной верстки сайта на flex.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 14,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Адаптивная верстка: media и viewport.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 15,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Позиционирование.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 16,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "Трансформация.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 17,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "CSS Grid.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 18,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 2,
+    "title": "CSS",
+    "description": "CSS-анимация.",
+    "lectionDate": "23.02.2022"
+  },
+  {
+    "id": 19,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Развертывание проекта на Github/gitlab.",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 20,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Продвинутое использование Git.",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 21,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Панель разработчика Chrome.",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 22,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Введение в JavaScript. Основные конструкции языка.",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 23,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Функции. Циклы. Объекты. This.",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 24,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "События в JavaScript. Обработка событий. Всплытие.",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 25,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Свойства и методы форм. События: focus, blur, change.",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 26,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Отправка формы на сервер submit.",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 27,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Заголовки запросов.",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 28,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "XHR-запросы.",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 29,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Асинхронный JavaScript (Promise, Async/Await).",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 30,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Cookie, SessionStorage, localStorage.",
+    "lectionDate": "08.03.2022"
+  },
+  {
+    "id": 31,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "JavaScript",
+    "description": "Обзор объекта window.",
+    "lectionDate": "01.03.2022"
+  },
+  {
+    "id": 32,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
     "type": 3,
     "title": "React",
-    "description": "Props, props-drilling",
+    "description": "Введение в React.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 33,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Развертывание и настройка React приложения.",
     "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 34,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Знакомство с React: Virtual DOM, JSX, ref.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 35,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Создание компонента, работа с PropTypes и Refs.",
+    "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 36,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Передача данных в React между компонентами.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 37,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Работа с state.",
+    "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 38,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "React Life Circle классовых компонентов.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 39,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Hooks и функциональное программирование.",
+    "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 40,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Обработка событий в React-компонентах.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 41,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "React Context.",
+    "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 42,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Redux dev tools.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 43,
+    "imageURL": "/pictures/main/lectionsBack/fourthBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Как устроен React-router.",
+    "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 44,
+    "imageURL": "/pictures/main/lectionsBack/firstBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Настройка: react-router, history.",
+    "lectionDate": "16.03.2022"
+  },
+  {
+    "id": 45,
+    "imageURL": "/pictures/main/lectionsBack/secondBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Подключение Redux.js.",
+    "lectionDate": "23.03.2022"
+  },
+  {
+    "id": 46,
+    "imageURL": "/pictures/main/lectionsBack/thirdBack.png",
+    "type": 3,
+    "title": "React",
+    "description": "Использование Redux-Thunk.",
+    "lectionDate": "16.03.2022"
   }
 ]

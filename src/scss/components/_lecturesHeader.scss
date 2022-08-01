@@ -11,9 +11,6 @@
   }
 
   &__main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap;
     padding-top: 30px;
   }
 
@@ -69,4 +66,11 @@
     left: 12px;
     top: 12px;
   }
+}
+
+.headerFrontClick {
+  transform: translateX(-330px);
+}
+.headerBackClick {
+  transform: translateX(330px);
 }

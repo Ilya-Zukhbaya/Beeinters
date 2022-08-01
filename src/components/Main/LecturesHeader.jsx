@@ -1,8 +1,11 @@
 import React from 'react';
 import { LectureBlock } from './LectureBlock';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-export const LecturesHeader = ({ items, searchLectures, setSearchLectures }) => {
-  const buttons = ['HTML', 'CSS', 'Javascrict', '8 лекций'];
+export const LecturesHeader = ({ items, searchLectures, setSearchLectures, settings }) => {
+  const buttons = ['HTML', 'CSS', 'Javascrict', `${items.length} лекций`];
   const [headerButton, setHeaderButton] = React.useState(0);
   const [headerButtonClick, setHeaderButtonClick] = React.useState(false);
 
@@ -11,7 +14,7 @@ export const LecturesHeader = ({ items, searchLectures, setSearchLectures }) => 
       <p>Все лекции на нашем сайте</p>
       <div className="lecturesHeader__container">
         <h2>ALL LECTURES</h2>
-        {headerButtonClick && headerButton === 4 && (
+        {headerButton === 4 && (
           <div className="searchContainer">
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <title />
@@ -43,26 +46,23 @@ export const LecturesHeader = ({ items, searchLectures, setSearchLectures }) => 
               {obj}
             </button>
           ))}
-          <button type="button" className="navigation-button lecturesHeader__container-navButton">
-            <img src="./pictures/main/arrowLeft.png" alt="arrowLeft" width={6} height={10} />
-          </button>
-          <button
-            type="button"
-            className="navigation-button lecturesHeader__container-navButton lastButton">
-            <img src="./pictures/main/arrowRight.png" alt="arrowRight" width={6} height={10} />
-          </button>
         </div>
       </div>
-      <div className="lecturesHeader__main">
-        {headerButtonClick && headerButton === 4
-          ? items
-              .filter((obj) => obj.description.toLowerCase().includes(searchLectures.toLowerCase()))
-              .map((obj) => <LectureBlock {...obj} key={obj.id} />)
-          : ''}
-        {headerButtonClick &&
-          items
+      <div className={headerButtonClick ? 'lecturesHeader__main' : 'activeContainer'}>
+        <Slider {...settings}>
+          {headerButton === 4
+            ? items
+                .filter((obj) =>
+                  obj.description.toLowerCase().includes(searchLectures.toLowerCase()),
+                )
+                .map((obj) => <LectureBlock {...obj} key={obj.id} />)
+            : ''}
+          {items
             .filter((obj) => obj.type === headerButton)
-            .map((obj) => <LectureBlock {...obj} key={obj.id} />)}
+            .map((obj) => (
+              <LectureBlock {...obj} key={obj.id} />
+            ))}
+        </Slider>
       </div>
     </article>
   );

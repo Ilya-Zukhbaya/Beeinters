@@ -17,10 +17,7 @@
 .root-article:last-child {
   padding-bottom: 50px;
 }
-.lecturesContainer {
-  display: flex;
-  justify-content: space-between;
-}
+
 .notFound-container {
   padding-top: 300px;
   margin: 0 auto;
@@ -36,4 +33,7 @@
     padding: 10px;
     font-size: 16px;
   }
+}
+.activeContainer {
+  display: none;
 }
