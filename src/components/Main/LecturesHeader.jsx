@@ -1,5 +1,8 @@
 import React from 'react';
 import { LectureBlock } from './LectureBlock';
+
+import { Link } from 'react-router-dom';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -46,6 +49,11 @@ export const LecturesHeader = ({ items, searchLectures, setSearchLectures, setti
               {obj}
             </button>
           ))}
+          <Link to="/favorites">
+            <button type="button" className="lection-button lecturesHeader__container-lectButton">
+              Избранное
+            </button>
+          </Link>
         </div>
       </div>
       <div className={headerButtonClick ? 'lecturesHeader__main' : 'activeContainer'}>

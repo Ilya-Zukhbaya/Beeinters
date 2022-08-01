@@ -79,21 +79,6 @@ export const Home = () => {
                   className="lection-button lecturesHeader__container-lectButton">
                   все лекции
                 </button>
-                <button
-                  type="button"
-                  className="navigation-button lecturesHeader__container-navButton">
-                  <img src="./pictures/main/arrowLeft.png" alt="arrowLeft" width={6} height={10} />
-                </button>
-                <button
-                  type="button"
-                  className="navigation-button lecturesHeader__container-navButton lastButton">
-                  <img
-                    src="./pictures/main/arrowRight.png"
-                    alt="arrowRight"
-                    width={6}
-                    height={10}
-                  />
-                </button>
               </div>
             </div>
           </div>
@@ -117,21 +102,6 @@ export const Home = () => {
                   type="button"
                   className="lection-button lecturesHeader__container-lectButton">
                   все лекции
-                </button>
-                <button
-                  type="button"
-                  className="navigation-button lecturesHeader__container-navButton">
-                  <img src="./pictures/main/arrowLeft.png" alt="arrowLeft" width={6} height={10} />
-                </button>
-                <button
-                  type="button"
-                  className="navigation-button lecturesHeader__container-navButton lastButton">
-                  <img
-                    src="./pictures/main/arrowRight.png"
-                    alt="arrowRight"
-                    width={6}
-                    height={10}
-                  />
                 </button>
               </div>
             </div>

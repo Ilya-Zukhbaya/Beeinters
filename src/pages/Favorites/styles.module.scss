@@ -1,0 +1,26 @@
+.root {
+  padding: 80px 0 0 340px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &__main {
+    div:last-child {
+      padding-top: 60px;
+    }
+  }
+  &__footer {
+    margin: 0 20px 50px 0;
+    text-align: end;
+
+    button {
+      background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
+      border-radius: 20px;
+      border: none;
+      color: white;
+      padding: 15px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}
