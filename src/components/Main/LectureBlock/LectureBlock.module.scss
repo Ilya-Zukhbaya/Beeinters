@@ -57,9 +57,20 @@
     align-items: center;
     padding: 5px 15px 0;
 
+    div {
+      display: flex;
+      align-items: center;
+
+      img {
+        filter: invert(50%);
+      }
+    }
     p {
       font-size: 13px;
       line-height: 10px;
     }
+  }
+  &__addedToFavorite {
+    margin-right: 5px;
   }
 }

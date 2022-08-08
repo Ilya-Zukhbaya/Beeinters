@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './LectureBlock.module.scss';
 
 export const LectureBlock = ({ imageURL, title, description, lectionDate }) => {
+  const [favoriteClick, setOnFavoriteClick] = React.useState(false);
+
   return (
     <div className={styles.root}>
       <div className={styles.root__header}>
@@ -17,9 +19,29 @@ export const LectureBlock = ({ imageURL, title, description, lectionDate }) => {
         </div>
         <div className={styles.root__footer}>
           <p>{lectionDate}</p>
-          <button type="button" className="watch-button" alt="watch lection">
-            Смотреть
-          </button>
+          <div>
+            {favoriteClick ? (
+              <img
+                className={styles.root__addedToFavorite}
+                src="./pictures/main/favoriteAdded.png"
+                alt="favorite"
+                width={25}
+                height={20}
+                onClick={() => setOnFavoriteClick(!favoriteClick)}
+              />
+            ) : (
+              <img
+                src="./pictures/main/favorite.png"
+                alt="favorite"
+                width={35}
+                height={35}
+                onClick={() => setOnFavoriteClick(!favoriteClick)}
+              />
+            )}
+            <button type="button" className="watch-button" alt="watch lection">
+              Смотреть
+            </button>
+          </div>
         </div>
       </div>
     </div>

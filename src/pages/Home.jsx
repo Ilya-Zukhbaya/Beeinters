@@ -3,25 +3,21 @@ import React from 'react';
 import Skeleton from '../components/Main/SkeletonBlock';
 import { LectureBlock } from '../components/Main/LectureBlock';
 import { LecturesHeader } from '../components/Main/LecturesHeader';
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import axios from 'axios';
+
+import { SearchContext } from '../App';
 
 export const Home = () => {
-  const [lections, setLections] = React.useState([]);
-  const [loading, setIsLoading] = React.useState(true);
-  const [searchLectures, setSearchLectures] = React.useState('');
+  const { lections, setLections, loading, setIsLoading } = React.useContext(SearchContext);
 
   React.useEffect(() => {
-    fetch(`https://62ceaccd826a88972d00785b.mockapi.io/lections`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((response) => {
-        setLections(response);
-        setIsLoading(false);
-      });
+    axios.get(`https://62ceaccd826a88972d00785b.mockapi.io/lections`).then((response) => {
+      setLections(response.data);
+      setIsLoading(false);
+    });
   }, []);
 
   const settings = {
@@ -61,12 +57,7 @@ export const Home = () => {
 
   return (
     <>
-      <LecturesHeader
-        items={lections}
-        searchLectures={searchLectures}
-        setSearchLectures={setSearchLectures}
-        settings={settings}
-      />
+      <LecturesHeader items={lections} settings={settings} />
       <article className="root-article">
         <div className="main-container">
           <div className="lecturesHeader">

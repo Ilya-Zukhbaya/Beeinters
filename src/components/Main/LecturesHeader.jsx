@@ -1,4 +1,8 @@
 import React from 'react';
+import axios from 'axios';
+
+import debounce from 'lodash.debounce';
+
 import { LectureBlock } from './LectureBlock';
 
 import { Link } from 'react-router-dom';
@@ -7,10 +11,32 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export const LecturesHeader = ({ items, searchLectures, setSearchLectures, settings }) => {
+export const LecturesHeader = ({ items, settings }) => {
   const buttons = ['HTML', 'CSS', 'Javascrict', `${items.length} лекций`];
+  const [value, setValue] = React.useState('');
+  const [searchLectures, setSearchLectures] = React.useState('');
   const [headerButton, setHeaderButton] = React.useState(0);
   const [headerButtonClick, setHeaderButtonClick] = React.useState(false);
+  const [allLectures, setAllLectures] = React.useState([]);
+
+  React.useEffect(() => {
+    const search = searchLectures ? `search=${searchLectures}` : '';
+    axios.get(`https://62ceaccd826a88972d00785b.mockapi.io/lections?${search}`).then((response) => {
+      setAllLectures(response.data);
+    });
+  }, [searchLectures]);
+
+  const updateSearchValue = React.useCallback(
+    debounce((str) => {
+      setSearchLectures(str);
+    }, 750),
+    [],
+  );
+
+  const onChangeInput = (event) => {
+    updateSearchValue(event.target.value);
+    setValue(event.target.value);
+  };
 
   return (
     <article className="lecturesHeader header-container">
@@ -28,11 +54,11 @@ export const LecturesHeader = ({ items, searchLectures, setSearchLectures, setti
               </g>
             </svg>
             <input
-              value={searchLectures}
+              value={value}
               type="search"
               name="search lections"
               placeholder="Поиск лекции..."
-              onChange={(event) => setSearchLectures(event.target.value)}
+              onChange={onChangeInput}
             />
           </div>
         )}
@@ -59,11 +85,7 @@ export const LecturesHeader = ({ items, searchLectures, setSearchLectures, setti
       <div className={headerButtonClick ? 'lecturesHeader__main' : 'activeContainer'}>
         <Slider {...settings}>
           {headerButton === 4
-            ? items
-                .filter((obj) =>
-                  obj.description.toLowerCase().includes(searchLectures.toLowerCase()),
-                )
-                .map((obj) => <LectureBlock {...obj} key={obj.id} />)
+            ? allLectures.map((obj) => <LectureBlock {...obj} key={obj.id} />)
             : ''}
           {items
             .filter((obj) => obj.type === headerButton)
