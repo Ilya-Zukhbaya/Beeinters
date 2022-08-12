@@ -1,23 +1,29 @@
 import React from 'react';
 import axios from 'axios';
-
 import debounce from 'lodash.debounce';
-
-import { LectureBlock } from './LectureBlock';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { setHeaderButton, setHeaderButtonClick } from '../../redux/slices/buttonSlice';
 import { Link } from 'react-router-dom';
+import { LectureBlock } from './LectureBlock';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const LecturesHeader = ({ items, settings }) => {
-  const buttons = ['HTML', 'CSS', 'Javascrict', `${items.length} лекций`];
+  const dispatch = useDispatch();
+  const { headerButton, headerButtonClick } = useSelector((state) => state.buttonSlice);
+  const buttons = ['HTML', 'CSS', 'Javascript', `${items.length} лекций`];
   const [value, setValue] = React.useState('');
   const [searchLectures, setSearchLectures] = React.useState('');
-  const [headerButton, setHeaderButton] = React.useState(0);
-  const [headerButtonClick, setHeaderButtonClick] = React.useState(false);
   const [allLectures, setAllLectures] = React.useState([]);
+
+  const onButtonClick = (i) => {
+    dispatch(setHeaderButton(i + 1));
+    headerButton !== i + 1
+      ? dispatch(setHeaderButtonClick(true))
+      : dispatch(setHeaderButtonClick(!headerButtonClick));
+  };
 
   React.useEffect(() => {
     const search = searchLectures ? `search=${searchLectures}` : '';
@@ -68,8 +74,7 @@ export const LecturesHeader = ({ items, settings }) => {
               type="button"
               className="lection-button lecturesHeader__container-lectButton"
               onClick={() => {
-                setHeaderButton(i + 1);
-                setHeaderButtonClick(!headerButtonClick);
+                onButtonClick(i);
               }}
               key={i}>
               {obj}
