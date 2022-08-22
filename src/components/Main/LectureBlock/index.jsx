@@ -1,8 +1,16 @@
 import React from 'react';
 import styles from './LectureBlock.module.scss';
+import { addToFavorite, removeFromFavorite } from '../../../redux/slices/favoriteSlice';
+import { useDispatch } from 'react-redux';
 
-export const LectureBlock = ({ imageURL, title, description, lectionDate }) => {
+export const LectureBlock = ({ id, imageURL, title, description, lectionDate }) => {
   const [favoriteClick, setOnFavoriteClick] = React.useState(false);
+  const dispatch = useDispatch();
+  const addingToFavorite = () => {
+    const item = { id, imageURL, title, description, lectionDate };
+    favoriteClick ? dispatch(removeFromFavorite(id)) : dispatch(addToFavorite(item));
+    setOnFavoriteClick(!favoriteClick);
+  };
 
   return (
     <div className={styles.root}>
@@ -22,12 +30,11 @@ export const LectureBlock = ({ imageURL, title, description, lectionDate }) => {
           <div>
             {favoriteClick ? (
               <img
-                className={styles.root__addedToFavorite}
                 src="./pictures/main/favoriteAdded.png"
                 alt="favorite"
                 width={25}
                 height={20}
-                onClick={() => setOnFavoriteClick(!favoriteClick)}
+                onClick={addingToFavorite}
               />
             ) : (
               <img
@@ -35,7 +42,7 @@ export const LectureBlock = ({ imageURL, title, description, lectionDate }) => {
                 alt="favorite"
                 width={35}
                 height={35}
-                onClick={() => setOnFavoriteClick(!favoriteClick)}
+                onClick={addingToFavorite}
               />
             )}
             <button type="button" className="watch-button" alt="watch lection">
