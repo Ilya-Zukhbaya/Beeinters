@@ -1,17 +1,11 @@
 .root {
-  padding: 80px 0 0 340px;
-  height: 100vh;
+  padding-top: 200px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  &__header {
-    padding-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1200px;
-  }
+  justify-content: center;
+  align-items: center;
   &__footer {
+    margin-top: 60px;
     button {
       background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
       border-radius: 20px;

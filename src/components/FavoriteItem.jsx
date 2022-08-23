@@ -1,13 +1,36 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { removeFromFavorite } from '../redux/slices/favoriteSlice';
 
-export const FavoriteItem = ({ id, description }) => {
+export const FavoriteItem = ({ id, description, imageURL, title, lectionDate }) => {
   const dispatch = useDispatch();
-  const { items } = useSelector((state) => state.favoriteSlice);
   const removingFromFavorite = () => {
-    dispatch(removeFromFavorite(id));
+    if (window.confirm('Are you sure you want to remove this lecture from favorities?')) {
+      dispatch(removeFromFavorite(id));
+    }
   };
 
-  return <p>{description}</p>;
+  return (
+    <div className="d-flex align-center justify-between favorite-container pb-10">
+      <div className="d-flex align-center testCon">
+        <div className="pr-20">
+          <img src={imageURL} alt="favoritedImage" width={200} height={100} />
+        </div>
+        <div>
+          <h2>{title}</h2>
+          <p className="testtest">{description}</p>
+        </div>
+      </div>
+      <div>
+        <p>Дата лекции:</p>
+        <p>{lectionDate}</p>
+      </div>
+      <div className="miniLecLogo-container">
+        <span>Лекция</span>
+      </div>
+      <div onClick={removingFromFavorite}>
+        <img src="./pictures/main/remove.png" width={25} />
+      </div>
+    </div>
+  );
 };

@@ -34,3 +34,18 @@
   font-size: 13px;
   line-height: 10px;
 }
+
+.miniLecLogo-container {
+  width: 80px;
+  height: 50px;
+  background: #6b69f9;
+  border-radius: 20px;
+  text-align: center;
+  span {
+    top: 12px;
+    position: relative;
+    font-size: 15px;
+    line-height: 14px;
+    bottom: 3px;
+  }
+}

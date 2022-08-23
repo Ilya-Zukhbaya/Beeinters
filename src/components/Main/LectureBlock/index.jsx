@@ -1,16 +1,23 @@
 import React from 'react';
 import styles from './LectureBlock.module.scss';
-import { addToFavorite, removeFromFavorite } from '../../../redux/slices/favoriteSlice';
-import { useDispatch } from 'react-redux';
+import {
+  addToFavorite,
+  removeFromFavorite,
+  selectCartItemById,
+} from '../../../redux/slices/favoriteSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 export const LectureBlock = ({ id, imageURL, title, description, lectionDate }) => {
-  const [favoriteClick, setOnFavoriteClick] = React.useState(false);
   const dispatch = useDispatch();
   const addingToFavorite = () => {
     const item = { id, imageURL, title, description, lectionDate };
-    favoriteClick ? dispatch(removeFromFavorite(id)) : dispatch(addToFavorite(item));
-    setOnFavoriteClick(!favoriteClick);
+    dispatch(addToFavorite(item));
   };
+  const removingTest = () => {
+    dispatch(removeFromFavorite(id));
+  };
+  const cartItem = useSelector(selectCartItemById(id));
+  const addedCount = cartItem ? cartItem.count : 0;
 
   return (
     <div className={styles.root}>
@@ -28,21 +35,21 @@ export const LectureBlock = ({ id, imageURL, title, description, lectionDate }) 
         <div className={styles.root__footer}>
           <p>{lectionDate}</p>
           <div>
-            {favoriteClick ? (
-              <img
-                src="./pictures/main/favoriteAdded.png"
-                alt="favorite"
-                width={25}
-                height={20}
-                onClick={addingToFavorite}
-              />
-            ) : (
+            {addedCount === 0 ? (
               <img
                 src="./pictures/main/favorite.png"
                 alt="favorite"
                 width={35}
                 height={35}
                 onClick={addingToFavorite}
+              />
+            ) : (
+              <img
+                src="./pictures/main/favoriteAdded.png"
+                alt="favorite"
+                width={25}
+                height={20}
+                onClick={removingTest}
               />
             )}
             <button type="button" className="watch-button" alt="watch lection">
