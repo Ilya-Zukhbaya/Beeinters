@@ -19,7 +19,7 @@ export const HTML__CSS = () => {
   }
 
   return (
-    <div className="d-flex flex-wrap pt-50">
+    <div className="d-flex flex-wrap pt-50 lectures-main-container">
       {items
         .filter((obj) => obj.type === 1 || obj.type === 2)
         .map((obj) => (

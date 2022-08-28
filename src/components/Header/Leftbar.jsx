@@ -36,37 +36,37 @@ export const Leftbar = () => {
               </div>
               {secClicked && (
                 <ul>
-                  <Link to="lectures/html-css">
+                  <Link to="lectures-html-css">
                     <li className="leftbar__sec-li">
                       <img src="./pictures/leftbar/1Shape.png" alt="sword" />
                       <p>HTML/CSS</p>
                     </li>
                   </Link>
-                  <Link to="lectures/git">
+                  <Link to="lectures-git">
                     <li className="leftbar__sec-li">
                       <img src="./pictures/leftbar/2Shape.png" alt="fireship" />
                       <p>GIT</p>
                     </li>
                   </Link>
-                  <Link to="lectures/js">
+                  <Link to="lectures-js">
                     <li className="leftbar__sec-li">
                       <img src="./pictures/leftbar/3Shape.png" alt="pazzle" />
                       <p>JavaScript</p>
                     </li>
                   </Link>
-                  <Link to="lectures/react">
+                  <Link to="lectures-react">
                     <li className="leftbar__sec-li">
                       <img src="./pictures/leftbar/4Shape.png" alt="rook" />
                       <p>React</p>
                     </li>
                   </Link>
-                  <Link to="lecture/angular">
+                  <Link to="lecture-angular">
                     <li className="leftbar__sec-li">
                       <img src="./pictures/leftbar/5Shape.png" alt="box" />
                       <p>Angular</p>
                     </li>
                   </Link>
-                  <Link to="lectures/data">
+                  <Link to="lectures-data">
                     <li className="leftbar__sec-li">
                       <img src="./pictures/leftbar/6Shape.png" alt="ball" />
                       <p>Data</p>
