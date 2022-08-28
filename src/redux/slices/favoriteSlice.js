@@ -1,7 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { getFavoritesFromLs } from '../../utils/getFavoritesFromLs';
+
+const favoritesData = getFavoritesFromLs();
 
 const initialState = {
-  items: [],
+  items: favoritesData.items,
 };
 
 const favoriteSlice = createSlice({

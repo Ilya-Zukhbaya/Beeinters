@@ -9,14 +9,30 @@ import 'slick-carousel/slick/slick-theme.css';
 import axios from 'axios';
 
 import { SearchContext } from '../App';
+import Modal from '../modals/ruleModal/Modal';
+import { MentorModal } from '../modals/mentorModal/MentorModal';
+import { Mentors } from '../components/Mentors';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
-  const { lections, setLections, loading, setIsLoading } = React.useContext(SearchContext);
-
+  const [mentorsItems, setMentorsItems] = React.useState([]);
+  const {
+    lections,
+    setLections,
+    loading,
+    setIsLoading,
+    modalActive,
+    setModalActive,
+    mentorModalActive,
+    setMentorModalActive,
+  } = React.useContext(SearchContext);
   React.useEffect(() => {
     axios.get(`https://62ceaccd826a88972d00785b.mockapi.io/lections`).then((response) => {
       setLections(response.data);
       setIsLoading(false);
+    });
+    axios.get('https://62ceaccd826a88972d00785b.mockapi.io/mentors').then((response) => {
+      setMentorsItems(response.data);
     });
   }, []);
 
@@ -56,7 +72,7 @@ export const Home = () => {
   };
 
   return (
-    <>
+    <div className="mainRoot-container">
       <LecturesHeader items={lections} settings={settings} />
       <article className="root-article">
         <div className="main-container">
@@ -65,11 +81,13 @@ export const Home = () => {
             <div className="lecturesHeader__container">
               <h2>JAVASCRIPT/REACT</h2>
               <div>
-                <button
-                  type="button"
-                  className="lection-button lecturesHeader__container-lectButton">
-                  все лекции
-                </button>
+                <Link to="lectures/js">
+                  <button
+                    type="button"
+                    className="lection-button lecturesHeader__container-lectButton">
+                    все лекции
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -89,11 +107,13 @@ export const Home = () => {
             <div className="lecturesHeader__container">
               <h2>HTML/CSS</h2>
               <div>
-                <button
-                  type="button"
-                  className="lection-button lecturesHeader__container-lectButton">
-                  все лекции
-                </button>
+                <Link to="lectures/html-css">
+                  <button
+                    type="button"
+                    className="lection-button lecturesHeader__container-lectButton">
+                    все лекции
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -108,6 +128,20 @@ export const Home = () => {
           </div>
         </div>
       </article>
-    </>
+      <Modal active={modalActive} setActive={setModalActive}>
+        <h1 className="pb-40">ЭТАПЫ ОТБОРА НА HTML/CSS:</h1>
+        <div className="d-flex">
+          <p>Регистрация до 15 декабря включительно</p>
+          <p>Скрининг заявок до 20 декабря включительно</p>
+          <p>Телефонное интервью до 22 декабря включительно</p>
+          <p>Финальный этап до 28 декабря включительно</p>
+        </div>
+      </Modal>
+      <MentorModal active={mentorModalActive} setActive={setMentorModalActive}>
+        {mentorsItems.map((obj, i) => (
+          <Mentors {...obj} key={i} />
+        ))}
+      </MentorModal>
+    </div>
   );
 };

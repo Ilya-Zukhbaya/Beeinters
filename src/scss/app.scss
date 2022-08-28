@@ -3,19 +3,13 @@
 
 @import './components/all';
 
-.root-article {
-  width: 1200px;
-  box-sizing: content-box;
-  padding: 70px 0 0 350px;
-}
-.header-container {
-  padding: 100px 0 0 350px;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: calc(100vw - 100px);
 }
 .main-container:first-child {
   padding-bottom: 70px;
-}
-.root-article:last-child {
-  padding-bottom: 50px;
 }
 
 .notFound-container {
@@ -45,4 +39,40 @@
 }
 .testCon {
   width: 500px;
+}
+.mainRoot-container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding-top: 100px;
+  height: 100vh;
+  padding-left: 200px;
+}
+.header-container {
+  padding-bottom: 70px;
+}
+.feedback-container {
+  display: flex;
+  padding-left: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.parent-modal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+}
+.mentorAvatar {
+  border-radius: 50%;
+}
+.react-container {
+  margin-left: 400px;
+}
+.remove-icon:hover {
+  cursor: pointer;
+}
+.loading {
+  padding-top: 300px;
 }

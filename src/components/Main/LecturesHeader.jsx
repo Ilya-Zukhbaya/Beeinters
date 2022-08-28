@@ -13,7 +13,7 @@ import 'slick-carousel/slick/slick-theme.css';
 export const LecturesHeader = ({ items, settings }) => {
   const dispatch = useDispatch();
   const { headerButton, headerButtonClick } = useSelector((state) => state.buttonSlice);
-  const buttons = ['HTML', 'CSS', 'Javascript', `${items.length} лекций`];
+  const buttons = ['HTML', 'CSS', 'Javascript/React', `${items.length} лекций`];
   const [value, setValue] = React.useState('');
   const [searchLectures, setSearchLectures] = React.useState('');
   const [allLectures, setAllLectures] = React.useState([]);

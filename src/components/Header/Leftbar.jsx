@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { SearchContext } from '../../App';
 
 export const Leftbar = () => {
   const [firstClicked, setFirstIsClicked] = React.useState(false);
   const [secClicked, setSecIsClicked] = React.useState(false);
+  const { setModalActive, setMentorModalActive } = React.useContext(SearchContext);
 
   return (
     <article className="leftbar__container">
@@ -19,7 +22,7 @@ export const Leftbar = () => {
         </div>
         {firstClicked && (
           <ul>
-            <li>МЕНТОРЫ</li>
+            <li onClick={() => setMentorModalActive(true)}>МЕНТОРЫ</li>
             <li>
               <div className="popup">
                 <p>ЛЕКЦИИ</p>
@@ -33,36 +36,52 @@ export const Leftbar = () => {
               </div>
               {secClicked && (
                 <ul>
-                  <li className="leftbar__sec-li">
-                    <img src="./pictures/leftbar/1Shape.png" alt="sword" />
-                    <p>HTML/CSS</p>
-                  </li>
-                  <li className="leftbar__sec-li">
-                    <img src="./pictures/leftbar/2Shape.png" alt="fireship" />
-                    <p>GIT</p>
-                  </li>
-                  <li className="leftbar__sec-li">
-                    <img src="./pictures/leftbar/3Shape.png" alt="pazzle" />
-                    <p>JavaScript</p>
-                  </li>
-                  <li className="leftbar__sec-li">
-                    <img src="./pictures/leftbar/4Shape.png" alt="rook" />
-                    <p>React</p>
-                  </li>
-                  <li className="leftbar__sec-li">
-                    <img src="./pictures/leftbar/5Shape.png" alt="box" />
-                    <p>Angular</p>
-                  </li>
-                  <li className="leftbar__sec-li">
-                    <img src="./pictures/leftbar/6Shape.png" alt="ball" />
-                    <p>Data</p>
-                  </li>
+                  <Link to="lectures/html-css">
+                    <li className="leftbar__sec-li">
+                      <img src="./pictures/leftbar/1Shape.png" alt="sword" />
+                      <p>HTML/CSS</p>
+                    </li>
+                  </Link>
+                  <Link to="lectures/git">
+                    <li className="leftbar__sec-li">
+                      <img src="./pictures/leftbar/2Shape.png" alt="fireship" />
+                      <p>GIT</p>
+                    </li>
+                  </Link>
+                  <Link to="lectures/js">
+                    <li className="leftbar__sec-li">
+                      <img src="./pictures/leftbar/3Shape.png" alt="pazzle" />
+                      <p>JavaScript</p>
+                    </li>
+                  </Link>
+                  <Link to="lectures/react">
+                    <li className="leftbar__sec-li">
+                      <img src="./pictures/leftbar/4Shape.png" alt="rook" />
+                      <p>React</p>
+                    </li>
+                  </Link>
+                  <Link to="lecture/angular">
+                    <li className="leftbar__sec-li">
+                      <img src="./pictures/leftbar/5Shape.png" alt="box" />
+                      <p>Angular</p>
+                    </li>
+                  </Link>
+                  <Link to="lectures/data">
+                    <li className="leftbar__sec-li">
+                      <img src="./pictures/leftbar/6Shape.png" alt="ball" />
+                      <p>Data</p>
+                    </li>
+                  </Link>
                 </ul>
               )}
             </li>
-            <li>ПРАВИЛА ПОСТУПЛЕНИЯ</li>
-            <li>НОВОСТИ</li>
-            <li>ОБРАТНАЯ СВЯЗЬ</li>
+            <li onClick={() => setModalActive(true)}>ПРАВИЛА ПОСТУПЛЕНИЯ</li>
+            <Link to="news">
+              <li>НОВОСТИ</li>
+            </Link>
+            <Link to="feedback">
+              <li>ОБРАТНАЯ СВЯЗЬ</li>
+            </Link>
           </ul>
         )}
       </div>

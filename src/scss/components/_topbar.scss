@@ -5,11 +5,11 @@
   justify-content: space-between;
   border-bottom: 1px solid #707070;
   background-color: $mainBackground;
-  width: 99vw;
-  height: 58px;
   position: fixed;
   overflow: hidden;
   z-index: 2;
+  max-width: 1800px;
+  width: calc(100vw - 100px);
 }
 
 .topbar {
@@ -29,14 +29,15 @@
   }
 
   &__info-container {
-    width: 1030px;
     display: flex;
     justify-content: space-between;
     ul {
       display: flex;
       align-items: center;
-      width: 250px;
       justify-content: space-between;
+      li {
+        margin-right: 10px;
+      }
     }
     ul:first-child {
       font-size: 14px;
@@ -44,7 +45,6 @@
       line-height: 10px;
     }
     ul:last-child {
-      width: 300px;
       li:last-child {
         display: flex;
         align-items: center;

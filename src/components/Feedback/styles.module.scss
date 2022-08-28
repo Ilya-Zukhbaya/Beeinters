@@ -1,0 +1,18 @@
+.root {
+  margin-right: 50px;
+
+  &__header {
+    margin-bottom: 20px;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    max-width: 400px;
+  }
+  &__role {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

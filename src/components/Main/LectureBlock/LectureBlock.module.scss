@@ -64,6 +64,9 @@
       img {
         filter: invert(50%);
       }
+      img:hover {
+        cursor: pointer;
+      }
     }
     p {
       font-size: 13px;

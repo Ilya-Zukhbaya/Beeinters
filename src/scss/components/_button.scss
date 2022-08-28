@@ -11,6 +11,9 @@
   font-size: 12px;
   line-height: 17px;
 }
+.lection-button:hover {
+  cursor: pointer;
+}
 
 .navigation-button {
   width: 30px;
@@ -20,8 +23,16 @@
   background-color: $mainBackground;
 }
 
+.navigation-button:hover {
+  cursor: pointer;
+}
+
 .lastButton {
   margin-right: unset !important;
+}
+
+.lastButton:hover {
+  cursor: pointer;
 }
 
 .watch-button {
@@ -33,6 +44,10 @@
   height: 30px;
   font-size: 13px;
   line-height: 10px;
+}
+
+.watch-button:hover {
+  cursor: pointer;
 }
 
 .miniLecLogo-container {
@@ -47,5 +62,19 @@
     font-size: 15px;
     line-height: 14px;
     bottom: 3px;
+  }
+}
+.backButton {
+  button {
+    background: linear-gradient(90deg, #6b69f9 0%, #6f6eff 100%);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  button:hover {
+    cursor: pointer;
   }
 }
