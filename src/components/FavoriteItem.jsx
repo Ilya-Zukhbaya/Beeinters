@@ -29,7 +29,7 @@ export const FavoriteItem = ({ id, description, imageURL, title, lectionDate }) 
         <span>Лекция</span>
       </div>
       <div onClick={removingFromFavorite}>
-        <img src="./pictures/main/remove.png" width={25} />
+        <img src="./pictures/main/remove.png" width={25} alt="removes" className="remove-icon" />
       </div>
     </div>
   );

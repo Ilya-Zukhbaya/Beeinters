@@ -61,7 +61,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Базовый синтаксис CSS: селекторы, классы.",
-    "lectionDate": "16.02.2022"
+    "lectionDate": "16.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=CHFZIlZHgYo"
   },
   {
     "id": 8,
@@ -69,7 +70,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Наследие и каскад.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=FSV9Y--awhU"
   },
   {
     "id": 9,
@@ -77,7 +79,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Отступы (margin, padding), схлопывание отступов.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=cf4WwIEczQk"
   },
   {
     "id": 10,
@@ -85,7 +88,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Ширина/высота: width, height, line-height, box-sizing.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=kRWP2QDtx0Q"
   },
   {
     "id": 11,
@@ -93,7 +97,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Работа с текстом.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=ef2Fj5X9b7c"
   },
   {
     "id": 12,
@@ -101,7 +106,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Работа с фоном: background.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=CU55g4rjwHI"
   },
   {
     "id": 13,
@@ -109,7 +115,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Принципы современной верстки сайта на flex.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=faJjJSy6r6o"
   },
   {
     "id": 14,
@@ -117,7 +124,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Адаптивная верстка: media и viewport.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=_JrUb8B25wU"
   },
   {
     "id": 15,
@@ -125,7 +133,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Позиционирование.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=yddKouea9AM"
   },
   {
     "id": 16,
@@ -133,7 +142,8 @@
     "type": 2,
     "title": "CSS",
     "description": "Трансформация.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=kCC08pjy8lE"
   },
   {
     "id": 17,
@@ -141,7 +151,8 @@
     "type": 2,
     "title": "CSS",
     "description": "CSS Grid.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=tqP7uh2E-0s"
   },
   {
     "id": 18,
@@ -149,7 +160,8 @@
     "type": 2,
     "title": "CSS",
     "description": "CSS-анимация.",
-    "lectionDate": "23.02.2022"
+    "lectionDate": "23.02.2022",
+    "watchHref": "https://www.youtube.com/watch?v=kCC08pjy8lE"
   },
   {
     "id": 19,
@@ -157,7 +169,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Развертывание проекта на Github/gitlab.",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=A-BioPly2eU"
   },
   {
     "id": 20,
@@ -165,7 +178,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Продвинутое использование Git.",
-    "lectionDate": "08.03.2022"
+    "lectionDate": "08.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=fNOchO6Y-3A"
   },
   {
     "id": 21,
@@ -173,7 +187,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Панель разработчика Chrome.",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=PYcfJutQVQA"
   },
   {
     "id": 22,
@@ -181,7 +196,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Введение в JavaScript. Основные конструкции языка.",
-    "lectionDate": "08.03.2022"
+    "lectionDate": "08.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=XQ3QLd8yV3s"
   },
   {
     "id": 23,
@@ -189,7 +205,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Функции. Циклы. Объекты. This.",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=s8xY8gke8qI"
   },
   {
     "id": 24,
@@ -197,7 +214,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "События в JavaScript. Обработка событий. Всплытие.",
-    "lectionDate": "08.03.2022"
+    "lectionDate": "08.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=u2OYDJmYVis"
   },
   {
     "id": 25,
@@ -205,7 +223,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Свойства и методы форм. События: focus, blur, change.",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=DLoLR7W07hs"
   },
   {
     "id": 26,
@@ -213,7 +232,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Отправка формы на сервер submit.",
-    "lectionDate": "08.03.2022"
+    "lectionDate": "08.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=Hvv4qJL1st8"
   },
   {
     "id": 27,
@@ -221,7 +241,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Заголовки запросов.",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=RRaH3cwnK_0"
   },
   {
     "id": 28,
@@ -229,7 +250,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "XHR-запросы.",
-    "lectionDate": "08.03.2022"
+    "lectionDate": "08.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=CuY4vzhTbas"
   },
   {
     "id": 29,
@@ -237,7 +259,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Асинхронный JavaScript (Promise, Async/Await).",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=8ZCXSGcmzSU"
   },
   {
     "id": 30,
@@ -245,7 +268,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Cookie, SessionStorage, localStorage.",
-    "lectionDate": "08.03.2022"
+    "lectionDate": "08.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=2NdvJ2u5AME"
   },
   {
     "id": 31,
@@ -253,7 +277,8 @@
     "type": 3,
     "title": "JavaScript",
     "description": "Обзор объекта window.",
-    "lectionDate": "01.03.2022"
+    "lectionDate": "01.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1OE"
   },
   {
     "id": 32,
@@ -261,7 +286,8 @@
     "type": 3,
     "title": "React",
     "description": "Введение в React.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=fsfsfc"
   },
   {
     "id": 33,
@@ -269,7 +295,8 @@
     "type": 3,
     "title": "React",
     "description": "Развертывание и настройка React приложения.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 34,
@@ -277,7 +304,8 @@
     "type": 3,
     "title": "React",
     "description": "Знакомство с React: Virtual DOM, JSX, ref.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 35,
@@ -285,7 +313,8 @@
     "type": 3,
     "title": "React",
     "description": "Создание компонента, работа с PropTypes и Refs.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 36,
@@ -293,7 +322,8 @@
     "type": 3,
     "title": "React",
     "description": "Передача данных в React между компонентами.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 37,
@@ -301,7 +331,8 @@
     "type": 3,
     "title": "React",
     "description": "Работа с state.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 38,
@@ -309,7 +340,8 @@
     "type": 3,
     "title": "React",
     "description": "React Life Circle классовых компонентов.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 39,
@@ -317,7 +349,8 @@
     "type": 3,
     "title": "React",
     "description": "Hooks и функциональное программирование.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 40,
@@ -325,7 +358,8 @@
     "type": 3,
     "title": "React",
     "description": "Обработка событий в React-компонентах.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 41,
@@ -333,7 +367,8 @@
     "type": 3,
     "title": "React",
     "description": "React Context.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 42,
@@ -341,7 +376,8 @@
     "type": 3,
     "title": "React",
     "description": "Redux dev tools.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 43,
@@ -349,7 +385,8 @@
     "type": 3,
     "title": "React",
     "description": "Как устроен React-router.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 44,
@@ -357,7 +394,8 @@
     "type": 3,
     "title": "React",
     "description": "Настройка: react-router, history.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 45,
@@ -365,7 +403,8 @@
     "type": 3,
     "title": "React",
     "description": "Подключение Redux.js.",
-    "lectionDate": "23.03.2022"
+    "lectionDate": "23.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   },
   {
     "id": 46,
@@ -373,6 +412,7 @@
     "type": 3,
     "title": "React",
     "description": "Использование Redux-Thunk.",
-    "lectionDate": "16.03.2022"
+    "lectionDate": "16.03.2022",
+    "watchHref": "https://www.youtube.com/watch?v=aAQNBE9v1Ogsdssf"
   }
 ]

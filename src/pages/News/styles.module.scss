@@ -1,0 +1,16 @@
+@import '../../scss/variables';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  a {
+    color: $purple;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+}

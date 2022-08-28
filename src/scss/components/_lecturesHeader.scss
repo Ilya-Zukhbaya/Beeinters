@@ -1,17 +1,11 @@
 @import '../variables';
 
 .lecturesHeader {
-  box-sizing: content-box;
-  width: 1200px;
   p {
     font-size: 11px;
     text-transform: uppercase;
     line-height: 16px;
     color: $grey;
-  }
-
-  &__main {
-    padding-top: 30px;
   }
 
   &__container {

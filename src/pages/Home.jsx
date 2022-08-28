@@ -9,10 +9,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import axios from 'axios';
 
 import { SearchContext } from '../App';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   const { lections, setLections, loading, setIsLoading } = React.useContext(SearchContext);
-
   React.useEffect(() => {
     axios.get(`https://62ceaccd826a88972d00785b.mockapi.io/lections`).then((response) => {
       setLections(response.data);
@@ -56,7 +56,7 @@ export const Home = () => {
   };
 
   return (
-    <>
+    <div className="mainRoot-container">
       <LecturesHeader items={lections} settings={settings} />
       <article className="root-article">
         <div className="main-container">
@@ -65,11 +65,13 @@ export const Home = () => {
             <div className="lecturesHeader__container">
               <h2>JAVASCRIPT/REACT</h2>
               <div>
-                <button
-                  type="button"
-                  className="lection-button lecturesHeader__container-lectButton">
-                  все лекции
-                </button>
+                <Link to="lectures-js">
+                  <button
+                    type="button"
+                    className="lection-button lecturesHeader__container-lectButton">
+                    все лекции
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -89,11 +91,13 @@ export const Home = () => {
             <div className="lecturesHeader__container">
               <h2>HTML/CSS</h2>
               <div>
-                <button
-                  type="button"
-                  className="lection-button lecturesHeader__container-lectButton">
-                  все лекции
-                </button>
+                <Link to="lectures-html-css">
+                  <button
+                    type="button"
+                    className="lection-button lecturesHeader__container-lectButton">
+                    все лекции
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -108,6 +112,6 @@ export const Home = () => {
           </div>
         </div>
       </article>
-    </>
+    </div>
   );
 };

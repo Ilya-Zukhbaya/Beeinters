@@ -7,7 +7,7 @@ import {
 } from '../../../redux/slices/favoriteSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
-export const LectureBlock = ({ id, imageURL, title, description, lectionDate }) => {
+export const LectureBlock = ({ id, imageURL, title, description, lectionDate, watchHref }) => {
   const dispatch = useDispatch();
   const addingToFavorite = () => {
     const item = { id, imageURL, title, description, lectionDate };
@@ -52,9 +52,11 @@ export const LectureBlock = ({ id, imageURL, title, description, lectionDate }) 
                 onClick={removingTest}
               />
             )}
-            <button type="button" className="watch-button" alt="watch lection">
-              Смотреть
-            </button>
+            <a href={watchHref}>
+              <button type="button" className="watch-button" alt="watch lection">
+                Смотреть
+              </button>
+            </a>
           </div>
         </div>
       </div>

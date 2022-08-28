@@ -24,6 +24,9 @@
       line-height: 20px;
       letter-spacing: 1px;
     }
+    li:hover {
+      cursor: pointer;
+    }
   }
 
   &__sec-li {
@@ -68,6 +71,9 @@
     height: 6px;
     transition: 0.5s;
   }
+  &__arrowUP:hover {
+    cursor: pointer;
+  }
   &__rotate-first {
     transform: rotate(180deg);
     transition: 0.5s;
@@ -75,6 +81,9 @@
   &__rotate-second {
     transform: rotate(180deg);
     transition: 0.5s;
+  }
+  &__rotate-first:hover {
+    cursor: pointer;
   }
 }
 .popup {
