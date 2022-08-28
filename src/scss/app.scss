@@ -79,3 +79,15 @@
 .lectures-main-container {
   padding-left: 350px;
 }
+@media (max-width: 1600px) {
+  .wrapper {
+    margin: unset;
+    width: unset;
+    .topbar-container {
+      width: 100vw;
+    }
+    .mainRoot-container {
+      padding-left: 250px;
+    }
+  }
+}

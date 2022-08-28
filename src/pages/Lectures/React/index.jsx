@@ -20,7 +20,7 @@ export const ReactLec = () => {
   }
 
   return (
-    <div className="d-flex flex-wrap pt-50 align-center justify-center react-container">
+    <div className="d-flex flex-wrap pt-50 lectures-main-container">
       {items.map((obj) => (
         <LectureBlock {...obj} key={obj.id} />
       ))}
