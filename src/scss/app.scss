@@ -90,4 +90,47 @@
       padding-left: 250px;
     }
   }
+  .main-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .header-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1370px) {
+  .main-container {
+    width: 700px;
+  }
+  .header-container {
+    width: 700px;
+  }
+}
+@media (max-width: 1070px) {
+  .main-container {
+    width: 400px;
+  }
+  .header-container {
+    width: 400px;
+  }
+  .searchContainer {
+    margin-bottom: 20px;
+  }
+  .lecturesHeader__container h2 {
+    margin-bottom: 20px;
+  }
+  .lecturesHeader__container {
+    flex-direction: column;
+  }
+  .lecturesHeader p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container {
+    margin-left: 75px;
+  }
 }
