@@ -10,7 +10,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export const LecturesHeader = ({ items, settings }) => {
+export const LecturesHeader = ({ items }) => {
   const dispatch = useDispatch();
   const { headerButton, headerButtonClick } = useSelector((state) => state.buttonSlice);
   const buttons = ['HTML', 'CSS', 'Javascript/React', `${items.length} лекций`];
@@ -23,6 +23,43 @@ export const LecturesHeader = ({ items, settings }) => {
     headerButton !== i + 1
       ? dispatch(setHeaderButtonClick(true))
       : dispatch(setHeaderButtonClick(!headerButtonClick));
+  };
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1540,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 0,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1370,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
+    ],
   };
 
   React.useEffect(() => {

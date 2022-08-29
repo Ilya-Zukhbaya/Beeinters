@@ -68,3 +68,17 @@
 .headerBackClick {
   transform: translateX(330px);
 }
+
+@media (max-width: 540px) {
+  .lecturesHeader {
+    &__container {
+      div:last-child {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+      }
+    }
+  }
+}

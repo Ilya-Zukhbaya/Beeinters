@@ -28,3 +28,8 @@
 .modal__content.active {
   transform: scale(1);
 }
+@media (max-width: 1150px) {
+  .modal__content {
+    width: 90vw;
+  }
+}

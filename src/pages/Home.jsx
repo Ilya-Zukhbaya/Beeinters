@@ -29,7 +29,7 @@ export const Home = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1540,
+        breakpoint: 1730,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -54,12 +54,28 @@ export const Home = () => {
           initialSlide: 0,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 670,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
     ],
   };
 
   return (
     <div className="mainRoot-container">
-      <LecturesHeader items={lections} settings={settings} />
+      <LecturesHeader items={lections} />
       <article className="root-article">
         <div className="main-container">
           <div className="lecturesHeader">
