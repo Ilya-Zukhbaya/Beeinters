@@ -32,4 +32,38 @@
   .modal__content {
     width: 90vw;
   }
+  .modal img {
+    width: 30px;
+  }
+  .modal h3 {
+    font-size: 12px;
+  }
+  .modal h4 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .modal__content {
+    width: 100vw;
+  }
+  .modal img {
+    width: 25x;
+  }
+  .modal h3 {
+    font-size: 8px;
+  }
+  .modal h4 {
+    font-size: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .modal p {
+    font-size: 12px;
+  }
+  .modal h1 {
+    font-size: 30px;
+  }
+  .modal h4 {
+    font-size: 6px;
+  }
 }

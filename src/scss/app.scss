@@ -141,6 +141,22 @@
   .mainRoot-container {
     padding-left: unset !important;
   }
+  .feedback-container {
+    padding-left: 15px !important;
+
+    img {
+      width: 45px !important;
+    }
+    h2 {
+      font-size: 16px !important;
+    }
+    h3 {
+      font-size: 13px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
 }
 @media (max-width: 450px) {
   .main-container {
@@ -154,5 +170,81 @@
   .lecturesHeader-main {
     width: 270px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 1645px) {
+  .favorite-container {
+    width: 800px;
+  }
+  .favorite-image {
+    width: 100px;
+    height: 50px;
+  }
+}
+@media (max-width: 1150px) {
+  .favorite-container {
+    width: 650px;
+  }
+  .favoriteItem-container {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .lectures-main-container {
+    padding-left: 0;
+  }
+  .feedback-container {
+    padding-left: 30px;
+    flex-direction: column;
+
+    img {
+      width: 60px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 10px;
+      padding: 0px;
+      height: 45px;
+      width: 105px;
+    }
+  }
+}
+@media (max-width: 510px) {
+  .reg-container {
+    flex-direction: column;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+.first-link {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .favoriteItem-container {
+    width: 150px;
+  }
+  .favorite-image {
+    display: none;
+  }
+  .favorite-container {
+    width: 450px;
+  }
+}
+@media (max-width: 540px) {
+  .favorite-container {
+    width: unset;
+  }
+  .miniLecLogo-container {
+    display: none;
   }
 }

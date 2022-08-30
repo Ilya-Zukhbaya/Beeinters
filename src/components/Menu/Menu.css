@@ -40,3 +40,14 @@
   margin-bottom: 10px;
   justify-content: space-between;
 }
+.secMenu-ul {
+  text-align: unset;
+}
+.left-li-menu {
+  margin-bottom: 15px;
+}
+.leftItem-icon {
+  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}

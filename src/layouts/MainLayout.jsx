@@ -15,11 +15,11 @@ export const MainLayout = () => {
       <Outlet />
       <Modal active={modalActive} setActive={setModalActive}>
         <h1 className="pb-40">ЭТАПЫ ОТБОРА НА HTML/CSS:</h1>
-        <div className="d-flex">
-          <p>Регистрация до 15 декабря включительно</p>
-          <p>Скрининг заявок до 20 декабря включительно</p>
-          <p>Телефонное интервью до 22 декабря включительно</p>
-          <p>Финальный этап до 28 декабря включительно</p>
+        <div className="d-flex reg-container">
+          <p className="pr-5">Регистрация до 15 декабря включительно</p>
+          <p className="pr-5">Скрининг заявок до 20 декабря включительно</p>
+          <p className="pr-5">Телефонное интервью до 22 декабря включительно</p>
+          <p className="pr-5">Финальный этап до 28 декабря включительно</p>
         </div>
       </Modal>
       <MentorModal active={mentorModalActive} setActive={setMentorModalActive}>

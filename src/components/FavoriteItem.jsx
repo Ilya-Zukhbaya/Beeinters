@@ -14,7 +14,13 @@ export const FavoriteItem = ({ id, description, imageURL, title, lectionDate }) 
     <div className="d-flex align-center justify-between favorite-container pb-10">
       <div className="d-flex align-center favoriteItem-container">
         <div className="pr-20">
-          <img src={imageURL} alt="favoritedImage" width={200} height={100} />
+          <img
+            src={imageURL}
+            alt="favoritedImage"
+            width={200}
+            height={100}
+            className="favorite-image"
+          />
         </div>
         <div>
           <h2>{title}</h2>

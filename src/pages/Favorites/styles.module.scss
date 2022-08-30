@@ -23,3 +23,60 @@
     }
   }
 }
+@media (max-width: 1645px) {
+  .root {
+    &__header {
+      width: 800px;
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .root {
+    &__header {
+      width: 650px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .root {
+    padding: 80px 0 0 290px;
+    &__header {
+      width: 500px;
+
+      button {
+        padding: 0px;
+        height: 65px;
+        font-size: 12px;
+        width: 120px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .root {
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .root {
+    &__header {
+      width: unset;
+      button {
+        display: none;
+      }
+    }
+  }
+}

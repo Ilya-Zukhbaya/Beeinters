@@ -30,6 +30,9 @@
   background-color: $leftBackground;
   width: 280px;
   padding: 5px 0 0 20px;
+  &__main-img {
+    display: none;
+  }
   &__logo-container {
     display: flex;
     align-items: center;
@@ -157,32 +160,7 @@
   height: 20px;
   position: relative;
   cursor: pointer;
-
-  // span {
-  //   content: '';
-  //   position: absolute;
-  //   top: 9px;
-  //   width: 20px;
-  //   background-color: #646464;
-  //   height: 2px;
-  // }
-}
-
-.burger-btn::before {
-  // content: '';
-  // position: absolute;
-  // top: 0;
-  // width: 20px;
-  // background-color: #898989;
-  // height: 2px;
-}
-.burger-btn::after {
-  // content: '';
-  // position: absolute;
-  // bottom: 0;
-  // width: 20px;
-  // background-color: #272727;
-  // height: 2px;
+  display: none;
 }
 @media (max-width: 1024px) {
   .PRO {
@@ -191,7 +169,7 @@
   .topbar__rightside {
     width: unset;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 15px;
   }
 }
 button {
@@ -208,9 +186,17 @@ button {
 @media (max-width: 450px) {
   .topbar {
     display: none;
+    &__main-img {
+      display: initial;
+      position: relative;
+      top: 12px;
+    }
   }
   .PRO {
     display: none;
+  }
+  .first-link {
+    display: initial !important;
   }
 }
 @media (max-width: 1024px) {
@@ -232,9 +218,15 @@ button {
 .nav-container {
   display: none;
 }
-.burger-btn {
-  display: none;
-}
-.leftvar__burger-btn {
+.leftbar__burger-btn {
   height: 30px;
+  display: none;
+  width: 20px;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .leftbar__burger-btn {
+    display: initial !important;
+  }
 }
