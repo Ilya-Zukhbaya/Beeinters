@@ -78,3 +78,9 @@
     cursor: pointer;
   }
 }
+@media (max-width: 450px) {
+  .watch-button {
+    height: 30px;
+    font-size: 11px;
+  }
+}

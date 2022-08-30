@@ -20,6 +20,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .topbar-container {
+    justify-content: space-evenly;
+  }
+}
+
 .topbar {
   background-color: $leftBackground;
   width: 280px;
@@ -29,6 +35,9 @@
     align-items: center;
     justify-content: space-between;
     width: 120px;
+  }
+  &__leftMenu-img {
+    background-color: #ffffff;
   }
   &__logo {
     font-weight: 700;
@@ -181,6 +190,8 @@
   }
   .topbar__rightside {
     width: unset;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 button {
@@ -191,6 +202,7 @@ button {
 @media (max-width: 768px) {
   .topbar {
     width: unset;
+    background-color: unset;
   }
 }
 @media (max-width: 450px) {
@@ -200,4 +212,29 @@ button {
   .PRO {
     display: none;
   }
+}
+@media (max-width: 1024px) {
+  .topbar {
+    &__info-container {
+      display: none;
+    }
+  }
+  .nav-container {
+    display: flex !important;
+  }
+  .topbar__rightside__avatar {
+    display: none;
+  }
+  .burger-btn {
+    display: initial !important;
+  }
+}
+.nav-container {
+  display: none;
+}
+.burger-btn {
+  display: none;
+}
+.leftvar__burger-btn {
+  height: 30px;
 }
