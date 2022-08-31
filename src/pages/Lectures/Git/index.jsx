@@ -20,7 +20,7 @@ export const Git = () => {
   }
 
   return (
-    <div className="d-flex flex-wrap pt-50 align-center justify-center">
+    <div className="d-flex flex-wrap pt-50 align-center justify-center flex-column">
       {items.map((obj) => (
         <LectureBlock {...obj} key={obj.id} />
       ))}

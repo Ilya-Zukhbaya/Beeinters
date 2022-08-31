@@ -75,7 +75,7 @@ export const Home = () => {
 
   return (
     <div className="mainRoot-container">
-      <LecturesHeader items={lections} />
+      <LecturesHeader items={lections} {...settings} />
       <article className="root-article">
         <div className="main-container">
           <div className="lecturesHeader">
