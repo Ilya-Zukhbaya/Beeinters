@@ -14,7 +14,7 @@ export const Leftbar = () => {
           <p>ПРОГРАММА</p>
           <button onClick={() => setFirstIsClicked(!firstClicked)}>
             <img
-              src="./pictures/leftbar/arrowUp.png"
+              src="./pictures/leftbar/leftbararrow.svg"
               alt="arrow up"
               className={firstClicked ? 'leftbar__rotate-first' : 'leftbar__arrowUP'}
             />
@@ -28,7 +28,7 @@ export const Leftbar = () => {
                 <p>ЛЕКЦИИ</p>
                 <button onClick={() => setSecIsClicked(!secClicked)}>
                   <img
-                    src="./pictures/leftbar/arrowUp.png"
+                    src="./pictures/leftbar/leftbararrow.svg"
                     alt="arrow up"
                     className={secClicked ? 'leftbar__rotate-second' : 'leftbar__arrowUP'}
                   />
